@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Student site</title>
+  <title>The Flatiron School</title>
   <%= stylesheet_link_tag    "style", :media => "all" %>
   <%= stylesheet_link_tag    "media-queries", :media => "all" %>
   <%= stylesheet_link_tag    "flexslider", :media => "screen" %>
   <%= stylesheet_link_tag    "font-awesome", :media => "screen" %>
-  
+  <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Merriweather:400,700&ver=3.5" %>
   <%= javascript_include_tag "comment-reply.min" %>
   <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "chirp.min" %>
   <%= javascript_include_tag "jquery.flexslider" %>
   <%= javascript_include_tag "jquery.tabs.min" %>
   <%= javascript_include_tag "jquery.fitvids" %>
-  <%= javascript_include_tag "mobilemenu" %>
+  <%= javascript_include_tag "jquery.mobilemenu" %>
+  <%= favicon_link_tag '/images/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'%>
   <%= csrf_meta_tags %>
 </head>
 <body>

@@ -4,19 +4,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
   <meta charset="UTF-8" />
   <meta name="viewport" content ="width=device-width, minimum-scale=1.0, initial-scale=1.0">
-
-  <title>The Flatiron School</title>
-
-  <link rel='stylesheet' href="stylesheets/style.css" type='text/css' media='all' />
-  <!-- <link rel='stylesheet' href="css/style-dark.css" type='text/css' media='all' /> -->
-  <link rel='stylesheet' href="stylesheets/media-queries.css" type='text/css' media='all' />
-  <link rel='stylesheet' href="stylesheets/flexslider.css" type='text/css' media='screen' />
-  <link rel='stylesheet' href="stylesheets/font-awesome.css" type='text/css' media='screen' />
-  <link rel='stylesheet' id='google_merriweather-css'  href='http://fonts.googleapis.com/css?family=Merriweather:400,700&ver=3.5' type='text/css' media='all' />
-  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-  <script type='text/javascript' src="javascripts/comment-reply.min.js"></script>
-  <script type='text/javascript' src="javascripts/jquery.js"></script>
-  <script type='text/javascript' src="javascripts/chirp.min.js"></script>
   <style type="text/css">a{color:#60BDDB}</style>
 </head>
 
@@ -29,7 +16,7 @@
         <div class="header-left">
           <h1 class="logo-text">
             <a href="/" title="The Flatiron School">
-              <img src="images/the-flatiron-school-logo-sm-black.png" class="logo">
+              <%= image_tag("the-flatiron-school-logo-sm-black.png", class: "logo") %>
             </a>
           </h1>
         </div>
@@ -77,44 +64,40 @@
       </div>
     </div>
     <!-- End Header -->
-
     <!-- Begin Title Content -->
-    <div class="page-title">
-      <h2>Every Story Has Heroes</h2>
-      <h3>We're 32 people on a journey to learn to love code.</h3>
-    </div>
-    <!-- End Title Content -->
-      <!-- Begin Student Index -->
-      <div id="random-full-width-content" class="this-div-is-just-a-helpful-container">
-        <div class="section section-services student-index">
-          <div class="section-title">
-            <span>Flatiron School Class 002</span>
-          </div>
-        </div>
-
-
-        <div class="section section-blog">
-          <div class="home-blog clearfix">
-            <ul>
-
-        <!-- Begin 3 Student Row -->
-
-        <%= yield %>
-
-        <!-- End 3 Student Row -->
-
-            </ul>
-          </div>
-        </div>
+    <div class="container">
+      <div class="page-title">
+        <h2>Every Story Has Heroes</h2>
+        <h3>We're 32 people on a journey to learn to love code.</h3>
       </div>
-      <!-- End Student Index -->
+      <!-- End Title Content -->
+        <!-- Begin Student Index -->
+        <div id="random-full-width-content" class="this-div-is-just-a-helpful-container">
+          <div class="section section-services student-index">
+            <div class="section-title">
+              <span>Flatiron School Class 002</span>
+            </div>
+          </div>
 
+          <div class="section section-blog">
+            <div class="home-blog clearfix">
+              <ul>
+          <!-- Begin 3 Student Row -->
+
+          <%= yield %>
+
+          <!-- End 3 Student Row -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- End Student Index -->
+      </div>
     </div>
     <div class="clear"></div>
     <!-- End Content -->
   </div>
   <!-- End Main Wrapper -->
-
 
 
   <!-- Begin Footer -->
