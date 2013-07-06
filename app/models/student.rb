@@ -1,3 +1,4 @@
 class Student < ActiveRecord::Base
-  # attr_accessible :title, :body
+  attr_accessible :id, :name, :tagline, :bio, :treehouse_profile, :linkedin, :twitter, :github, :quote
+
 end
