@@ -1,4 +1,7 @@
 StudentsiteRails::Application.routes.draw do
+  resources :students
+
+
   get "students/index"
 
   # The priority is based upon order of creation:
