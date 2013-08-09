@@ -2906,7 +2906,7 @@ input.hs-button.primary.large{
   /*background: url(../img/plaza_espana.jpg) no-repeat top center;*/
   margin-bottom: 0;
   padding: 0;
-  height: 275px;
+  height: 100px;
   text-align: bottom;
 }
 
@@ -3059,3 +3059,31 @@ input.hs-button.primary.large{
 
 body.students a{color:#60BDDB} /*Causing the social icons to be blue*/
 
+.home-blog-post .blog-thumb img {
+    max-width: 100%;
+    min-width: 100%;
+    height: 140px;
+}
+
+.home-blog-post .blog-thumb {
+    height: 140px;
+}
+
+p.home-blog-post-meta {
+    height: 240px;
+    overflow: scroll;
+}
+
+body.students ul li.home-blog-post{
+    list-style-type:none;
+    height: 490px;
+}
+
+.home-blog-post-meta {
+text-transform: uppercase;
+font-size: 10px;
+color: #aaa;
+line-height: 16px;
+margin-bottom: 20px;
+padding-bottom: 20px;
+border-bottom: none;

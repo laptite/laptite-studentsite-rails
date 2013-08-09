@@ -11,16 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130706234021) do
-
-  create_table "student_scrapes", :force => true do |t|
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
+ActiveRecord::Schema.define(:version => 20130809030548) do
 
   create_table "students", :force => true do |t|
+    t.string   "name"
+    t.string   "tagline"
+    t.string   "excerpt"
+    t.string   "linkedin"
+    t.string   "github"
+    t.string   "quote"
+    t.string   "bio"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "twitter"
   end
 
 end

@@ -8,15 +8,12 @@
   <%= stylesheet_link_tag    "flexslider", :media => "screen" %>
   <%= stylesheet_link_tag    "font-awesome", :media => "screen" %>
   <%= stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Merriweather:400,700&ver=3.5" %>
+  <%= favicon_link_tag '/images/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'%>
   <%= javascript_include_tag "comment-reply.min" %>
   <%= javascript_include_tag "jquery" %>
   <%= javascript_include_tag "chirp.min" %>
-  <%= javascript_include_tag "jquery.flexslider" %>
-  <%= javascript_include_tag "jquery.tabs.min" %>
-  <%= javascript_include_tag "jquery.fitvids" %>
-  <%= javascript_include_tag "jquery.mobilemenu" %>
-  <%= favicon_link_tag '/images/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'%>
   <%= csrf_meta_tags %>
+  <style type="text/css">a{color:#60BDDB}</style>
 </head>
 
 <body class="home page students">
@@ -40,7 +37,7 @@
               </li>
               <li>
                 <a href="program.html">The Program</a>
-                <ul class="sub-menu" id="nav" style="visibility: hidden;">
+                <ul class="sub-menu">
                   <li><a href="http://flatironschool.com/program.html">Basics</a></li>
                   <li><a href="http://flatironschool.com/curriculum.html">Curriculum</a></li>
                   <li><a href="http://flatironschool.com/faculty.html">Faculty</a></li>
@@ -52,7 +49,7 @@
               <li>
                 <a href="#">The School</a>
 
-                <ul class="sub-menu" id="nav" style="visibility: hidden;">
+                <ul class="sub-menu">
                   <li><a href="http://flatironschool.com/events.html">Events</a></li>
                   <li><a href="http://flatironschool.com/contact.html">Contact</a></li>
                   <li><a href="http://students.flatironschool.com/">Students</a></li>
@@ -68,7 +65,7 @@
                 <a href="http://blog.flatironschool.com/">Blog</a>
               </li>
               <li><a href="http://highschool.flatironschool.com/" target="_blank">High School</a></li>
-            </ul><select class="select-menu"><option value="#">Navigate to...</option><option value="http://flatironschool.com/index.html">&nbsp;Home</option><option value="http://students.flatironschool.com/program.html">&nbsp;The Program</option><option value="http://flatironschool.com/program.html">–&nbsp;Basics</option><option value="http://flatironschool.com/curriculum.html">–&nbsp;Curriculum</option><option value="http://flatironschool.com/faculty.html">–&nbsp;Faculty</option><option value="http://flatironschool.com/speakers.html">–&nbsp;Guest Speakers</option><option value="http://flatironschool.com/faq.html">–&nbsp;FAQ</option><option value="http://prework.flatironschool.com/">–&nbsp;Our Prework</option><option value="http://students.flatironschool.com/#">&nbsp;The School</option><option value="http://flatironschool.com/events.html">–&nbsp;Events</option><option value="http://flatironschool.com/contact.html">–&nbsp;Contact</option><option value="http://students.flatironschool.com/" selected="selected">–&nbsp;Students</option><option value="http://info.flatironschool.com/summer-2013-application">&nbsp;Apply</option><option value="http://flatironschool.com/employers.html">&nbsp;Employers</option><option value="http://blog.flatironschool.com/">&nbsp;Blog</option><option value="http://highschool.flatironschool.com/">&nbsp;High School</option></select><div class="mobile-icon"></div>
+            </ul>
           </div>
           <div class="clear"></div>
         </div>
@@ -77,7 +74,7 @@
     </div>
     <!-- End Header -->
 
-    <!-- Begin Content -->
+   <!-- Begin Content -->
     <div class="container">
 
       <!-- Begin Title Content -->
@@ -95,16 +92,15 @@
           </div>
         </div>
 
-
         <div class="section section-blog">
           <div class="home-blog clearfix">
             <ul>
 
-              <!-- Begin 3 Student Row -->
+              <!-- Begin Student Row -->
 
               <%= yield %>
 
-              <!-- End 3 Student Row -->
+              <!-- End Student Row -->
 
             </ul>
           </div>
@@ -132,11 +128,10 @@
   <!-- End Footer -->
 
   <script type="text/javascript">var custom_js_vars={"flexslider_auto":"enabled"};</script>
-  <script type="text/javascript" src="javascripts/custom.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.flexslider.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.tabs.min.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.fitvids.js"></script>
-  <script type="text/javascript" src="javascripts/jquery.mobilemenu.js"></script>
+  <%= javascript_include_tag "jquery.flexslider" %>
+  <%= javascript_include_tag "jquery.tabs.min" %>
+  <%= javascript_include_tag "jquery.fitvids" %>
+  <%= javascript_include_tag "jquery.mobilemenu" %>
 
   <script type="text/javascript">
 
